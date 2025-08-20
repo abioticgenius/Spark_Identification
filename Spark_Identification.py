@@ -4,10 +4,10 @@ import csv
 from ultralytics import YOLO
 
 # Paths
-model_path = '/content/drive/MyDrive/Panto_2.v1i.yolov8-obb/runs/detect/train2/weights/best.pt'
-input_video_path = '/content/drive/MyDrive/Contact_Point_Detection_2.v2i.yolov8/spark_4.mp4'
-output_video_path = '/content/drive/MyDrive/Contact_Point_Detection_2.v2i.yolov8/spark_4_output.mp4'
-csv_output_path = '/content/drive/MyDrive/Contact_Point_Detection_2.v2i.yolov8/spark_4_data.csv'
+model_path = ''
+input_video_path = ''
+output_video_path = ''
+csv_output_path = ''
 
 # Initialize YOLO model
 model = YOLO(model_path)
@@ -185,3 +185,4 @@ while cap.isOpened():
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
